@@ -1,0 +1,19 @@
+l<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+</head>
+<body style="margin:0; padding:0; background:transparent;">
+  <audio id="bgMusic" autoplay loop muted>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    window.onload = () => {
+      const music = document.getElementById("bgMusic");
+      setTimeout(() => { music.muted = false; }, 1000);
+    };
+  </script>
+</body>
+</html>

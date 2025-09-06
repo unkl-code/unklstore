@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unkl Store - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="hero fade-in">
+    <h1 id="titleHome">Unkl Store</h1>
+    <p id="tagline">Akun Sharing Premium • Murah • Aman • Bergaransi</p>
+    <a href="paket.html" class="btn" id="btnSeePackages">Lihat Paket</a>
+
+    <!-- Tombol Bahasa -->
+    <div class="lang-switch">
+      <button onclick="setLanguage('id')">🇮🇩 Indonesia</button>
+      <button onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+
+    <!-- Musik -->
+    <div class="music-control">
+      <button id="musicToggle">🔇 Matikan Musik</button>
+    </div>
+  </header>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Unkl Store | IG: 
+      <a href="https://instagram.com/unklstore_" target="_blank">@unklstore_</a>
+    </p>
+  </footer>
+
+  <!-- IFRAME PLAYER -->
+  <iframe src="player.html" id="musicFrame"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>

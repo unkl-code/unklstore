@@ -1,0 +1,104 @@
+l<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paket Premium - Unkl Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOADING ANIMATION -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <p id="loadingText">Loading paket...</p>
+  </div>
+
+  <div id="content" style="display:none;">
+    <header class="hero fade-in">
+      <h1 id="titlePackages">Paket Premium</h1>
+      <a href="index.html" class="btn" id="btnHome">🏠 Home</a>
+
+      <!-- Search & Filter -->
+      <div class="search-filter">
+        <input type="text" id="searchBar" placeholder="Cari aplikasi...">
+        <select id="filterCategory">
+          <option value="all">Semua Kategori</option>
+          <option value="video">🎬 Video</option>
+          <option value="music">🎵 Musik</option>
+          <option value="editing">🎨 Editing</option>
+          <option value="ai">🤖 AI</option>
+        </select>
+      </div>
+
+      <!-- Tombol Bahasa -->
+      <div class="lang-switch">
+        <button onclick="setLanguage('id')">🇮🇩 Indonesia</button>
+        <button onclick="setLanguage('en')">🇬🇧 English</button>
+      </div>
+
+      <!-- Musik -->
+      <div class="music-control">
+        <button id="musicToggle">🔇 Matikan Musik</button>
+      </div>
+    </header>
+
+    <!-- PRODUK -->
+    <main>
+      <section id="produk" class="produk-container fade-in">
+  <div class="produk" data-category="editing"><h2>Alight Motion</h2><p>Rp 8.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Alight%20Motion">Order WA</a></div>
+  <div class="produk" data-category="editing"><h2>Canva</h2><p>Rp 6.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Canva">Order WA</a></div>
+  <div class="produk" data-category="editing"><h2>CapCut</h2><p>Rp 16.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20CapCut">Order WA</a></div>
+  <div class="produk" data-category="ai"><h2>ChatGPT</h2><p>Rp 27.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20ChatGPT">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>Disney+</h2><p>Rp 25.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Disney+">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>DramaBox</h2><p>-</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20DramaBox">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>HBO Max</h2><p>Rp 19.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20HBO%20Max">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>iQIYI</h2><p>Rp 13.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20iQIYI">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>LokLok</h2><p>Rp 15.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20LokLok">Order WA</a></div>
+  <!-- Meitu dihapus -->
+  <div class="produk" data-category="video"><h2>Netflix</h2><p>Rp 18.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Netflix">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>Prime Video</h2><p>Rp 10.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Prime%20Video">Order WA</a></div>
+  <!-- Remini dihapus -->
+  <div class="produk" data-category="music"><h2>Spotify</h2><p>Rp 20.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Spotify">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>Vidio</h2><p>Rp 17.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Vidio">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>Viu</h2><p>Rp 3.500 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Viu">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>WeTV</h2><p>Rp 12.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20WeTV">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>Youku</h2><p>Rp 10.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20Youku">Order WA</a></div>
+  <div class="produk" data-category="video"><h2>YouTube Premium</h2><p>Rp 8.000 / bulan</p><a class="btn" href="https://wa.me/6285624634611?text=Mau%20YouTube%20Premium">Order WA</a></div>
+</section>
+
+      <!-- INFO -->
+      <section class="info fade-in">
+        <h2 id="whyUsTitle">Kenapa Pilih Unkl Store?</h2>
+        <ul>
+          <li id="why1">✅ Akun sharing resmi (bukan hack)</li>
+          <li id="why2">✅ Harga terjangkau</li>
+          <li id="why3">✅ Garansi sesuai paket</li>
+          <li id="why4">✅ Order mudah via WhatsApp</li>
+        </ul>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <section class="disclaimer fade-in">
+        <h2 id="disclaimerTitle">Disclaimer</h2>
+        <p id="disclaimerText">
+          Unkl Store menyediakan jasa patungan akun premium (sharing account).
+          Bukan hasil hack atau akun ilegal. 
+          Kami tidak berafiliasi dengan Netflix, Spotify, Viu, Disney+, atau layanan resmi lainnya.
+        </p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Unkl Store | IG: 
+        <a href="https://instagram.com/unklstore_" target="_blank">@unklstore_</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- IFRAME PLAYER -->
+  <iframe src="player.html" id="musicFrame"></iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>
